@@ -1,0 +1,12 @@
+category,name,price,description,image
+Appetizers,Garlic Knots,6.99,"Baked dough knots brushed with garlic butter and herbs",images/garlic_knots.jpg
+Appetizers,Bruschetta,8.50,"Toasted bread topped with diced tomatoes, basil, and balsamic glaze",images/bruschetta.jpg
+Appetizers,Calamari Fritti,11.99,"Crispy fried squid served with zesty marinara sauce",images/calamari.jpg
+Appetizers,Caprese Salad,9.50,"Sliced fresh mozzarella, ripe tomatoes, and sweet basil",images/caprese.jpg
+Entrees,Margherita Pizza,14.50,"Fresh mozzarella, basil, and tomato sauce",images/margherita.jpg
+Entrees,Chicken Alfredo,16.00,"Fettuccine pasta tossed in creamy parmesan sauce",images/alfredo.jpg
+Entrees,Lasagna Bolognese,17.50,"Layered pasta with slow-cooked meat sauce, ricotta, and mozzarella",images/lasagna.jpg
+Entrees,Spaghetti Carbonara,15.75,"Spaghetti tossed with pancetta, egg yolk, black pepper, and pecorino",images/carbonara.jpg
+Entrees,Chicken Parmigiana,18.25,"Breaded chicken breast baked with marinara and melted provolone",images/chicken_parm.jpg
+Desserts,Tiramisu,7.50,"Espresso-soaked ladyfingers layered with mascarpone cream and cocoa",images/tiramisu.jpg
+Drinks,Lemonade,3.25,Freshly squeezed house lemonade,images/lemonade.jpg
