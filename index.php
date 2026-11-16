@@ -75,10 +75,6 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 </nav>
 <?php endif; ?>
 
-<h1> this will be our main page </h1>
-<a href="/~m282364/SI350/SI350Website/menu.php"> menu </a> <br>
-<a href="/~m282364/SI350/SI350Website/login.html"> login </a> <br>
-</head>
 <header>
 <h1>Welcome to Sorelle Ristorante Italiano</h1>
 <p>Authentic Italian dining brought to you by sisters and founders Melania Gonzalez, Gabrielle Fortner, and Amanda Ballard.</p>
@@ -108,4 +104,6 @@ At Sorelle Ristorante Italiano, we blend traditional family recipes with modern 
 
 
 
-<img src="logo.jpeg" alt="The Sisters" width="300">
+<footer>
+  <p><a href="/~m282364/SI350/SI350Website/aboutus.php">Contact Us</a></p>
+</footer>
