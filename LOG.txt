@@ -1,2 +1,0 @@
-Username	 Email	 Password 
-test	Test@test.com	$2y$10$VhCuo62rqSfyuelDxv2uvOsfjKwqSnLnq.p.lrI4jxOmPKIm7JzRy	

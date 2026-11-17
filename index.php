@@ -1,8 +1,8 @@
 <?php 
 session_start();
-
-$id = session_id();
+$loggedin = isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] === true;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
