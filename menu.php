@@ -29,7 +29,6 @@ td { vertical-align: middle; }
 </style>
 </head>
 <body>
-
 <?php if($loggedin): ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,6 +48,10 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 <li class="nav-item">
 <a class="nav-link" href="/~m282364/SI350/SI350Website/menu.php">Menu</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="/~m282364/SI350/SI350Website/reserve.php">Make a Reservation</a>
+</li>
+
 
 <li class="nav-item">
 <a class="nav-link" href="/~m282364/SI350/SI350Website/logout.php">Log Out</a>
@@ -58,6 +61,7 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 </div>
 </div>
 </nav>
+
 
 <?php else: ?>
 
