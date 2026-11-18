@@ -40,41 +40,32 @@
 
   <header>
     <h1>Reserve a Table</h1>
-    <p>Fill out the form below to request a table at Sorelle Ristorante Italiano.</p>
+    <p>Fill out the form below to reserve a table.</p>
   </header>
 
   <h2>Reservation Details</h2>
-  <form id="reservationForm" onsubmit="confirmBooking(event)">
-    Name: <input type="text" id="guestName" name="guestName" required> <br><br>
-    Email: <input type="email" id="guestEmail" name="guestEmail" required> <br><br>
-    Date: <input type="date" id="resDate" name="resDate" required> <br><br>
+  <form onsubmit="sendReservation(event)">
+    Name: <input type="text" id="guestName" required> <br><br>
+    Date: <input type="date" id="resDate" required> <br><br>
     Time:
-    <select id="resTime" name="resTime" required>
+    <select id="resTime">
       <option value="5:00 PM">5:00 PM</option>
-      <option value="5:30 PM">5:30 PM</option>
       <option value="6:00 PM">6:00 PM</option>
-      <option value="6:30 PM">6:30 PM</option>
       <option value="7:00 PM">7:00 PM</option>
-      <option value="7:30 PM">7:30 PM</option>
       <option value="8:00 PM">8:00 PM</option>
     </select> <br><br>
     Party Size:
-    <select id="partySize" name="partySize" required>
-      <option value="1">1 Guest</option>
-      <option value="2" selected>2 Guests</option>
-      <option value="3">3 Guests</option>
+    <select id="partySize">
+      <option value="2">2 Guests</option>
       <option value="4">4 Guests</option>
-      <option value="5">5 Guests</option>
       <option value="6">6 Guests</option>
     </select> <br><br>
-    Special Requests: <br>
-    <textarea id="notes" name="notes" rows="3" cols="35"></textarea> <br><br>
 
     <input type="submit" value="Submit Reservation">
     <input type="reset" value="Reset Form">
   </form>
 
-  <p id="confirmationMsg" class="p-co" style="display: none;"></p>
+  <p id="responseMsg" class="p-co"></p>
 
   <hr>
 
@@ -103,16 +94,26 @@
   </footer>
 
   <script>
-    function confirmBooking(event) {
+    function sendReservation(event) {
       event.preventDefault();
+
       const name = document.getElementById("guestName").value;
       const date = document.getElementById("resDate").value;
       const time = document.getElementById("resTime").value;
       const party = document.getElementById("partySize").value;
 
-      const msg = document.getElementById("confirmationMsg");
-      msg.textContent = "Thank you, " + name + "! Your table for " + party + " on " + date + " at " + time + " has been reserved.";
-      msg.style.display = "block";
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("responseMsg").innerHTML = xhttp.responseText;
+      };
+
+      const url = "reservations.php?name=" + encodeURIComponent(name)
+                + "&date=" + encodeURIComponent(date)
+                + "&time=" + encodeURIComponent(time)
+                + "&party=" + encodeURIComponent(party);
+
+      xhttp.open("GET", url, true);
+      xhttp.send();
     }
   </script>
 
