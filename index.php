@@ -73,6 +73,11 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 <li class="nav-item">
 <a class="nav-link" href="/~m282364/SI350/SI350Website/login.html">Log In</a>
 </li>
+
+<li class="nav-item">
+<a class="nav-link" href="/~m271974/SI350/SI350Website/rewards.html">Rewards</a>
+</li>
+
 </ul>
 </div>
 </div>
