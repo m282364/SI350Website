@@ -75,7 +75,7 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="/~m271974/SI350/SI350Website/rewards.html">Rewards</a>
+<a class="nav-link" href="/~m271974/SI350/SI350Website/rewards.php">Rewards</a>
 </li>
 
 </ul>
@@ -108,7 +108,7 @@ At Sorelle Ristorante Italiano, we blend traditional family recipes with modern 
 
 <h3>Sorelle Loyalty Rewards</h3>
 <p>Log in to your member account to track your spending, check your loyalty points remotely, and unlock milestones toward a free meal.</p>
-<a href="loyalty.html">Check Your Points</a>
+<a href="rewards.php">Check Your Points</a>
 <br>
 
 

@@ -1,4 +1,19 @@
-<p >Welcome to our Rewards Program!</p>
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true){
+    echo "Free food on the horizon. Create an account with us to join our rewards program today!"; 
+    echo '<p><a href="/~m271974/SI350/SI350Website/login.php">Click here to register</a></p>';
+    exit;
+}
+
+?>
+
+
+
+
+
+<h1>Welcome to our Rewards Program!</h1>
 
 <h3>How it Works:</h3>
 <p>Earn points for every dollar you spend at Sorelle Ristorante Italiano. Redeem your points for exclusive rewards and special offers. The more you dine with us, the more you earn!
