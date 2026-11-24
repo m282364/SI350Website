@@ -1,12 +1,12 @@
 <?php
-// admin.php - Admin only: list users, change their points, disable / re-enable accounts.
+// chatGPT helped with this logic 
 session_start();
 require_once 'user_storage.php';
 
 $users = getUsersSafe();
 $me = $_SESSION['Username'] ?? '';
 
-// Only admins are allowed in. The role comes from users.json, not from the browser.
+// Only admins comes from user.json
 if (($users[$me]['role'] ?? '') !== 'admin') {
     exit('Admins only.');
 }
@@ -19,7 +19,6 @@ if (isset($_POST['username'], $_POST['action'])) {
     $action = $_POST['action'];
 
     if ($action === 'points') {
-        // Points must be a whole number from 0 to 100000.
         $points = filter_var($_POST['points'] ?? '', FILTER_VALIDATE_INT,
                              ['options' => ['min_range' => 0, 'max_range' => 100000]]);
         if ($points === false) {
@@ -45,7 +44,7 @@ if (isset($_POST['username'], $_POST['action'])) {
         $message = 'Updated account for ' . $who . '.';
     }
 
-    $users = getUsersSafe();   // reload so the table shows the new values
+    $users = getUsersSafe();   
 }
 ?>
 <!DOCTYPE html>
