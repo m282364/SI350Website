@@ -67,8 +67,8 @@ if (empty($mistakes)) {
 <html lang="en">
 <body>
   <br>
-  <a href="/~m282364/SI350/SI350Website/login.html">Log In</a> | 
-  <a href="/~m282364/SI350/SI350Website/registration.html">Refill out the form</a> | 
-  <a href="/~m282364/SI350/SI350Website/index.php">Go back to homepage</a>
+  <a href="loginpage.php">Log In</a> | 
+  <a href="registration.html">Refill out the form</a> | 
+  <a href="index.php">Go back to homepage</a>
 </body>
 </html>

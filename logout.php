@@ -17,7 +17,7 @@ else:
   
 </head>
 <body>
-    <p>Please log in <a href="login.html">here</a>.</p>
+    <p>Please log in <a href="loginpage.php">here</a>.</p>
 </body>
 </html>
 <?php 

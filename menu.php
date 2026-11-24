@@ -1,5 +1,6 @@
 <?php 
 session_start();
+require_once 'is_admin.php';
 
 $id = session_id();
 
@@ -34,7 +35,7 @@ td { vertical-align: middle; }
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container-fluid">
 <img src="images/LOGO.png", width = 200px, height = 200px, padding=20px>
-<a class="navbar-brand" href="http://midn.cs.usna.edu/~m282364/SI350/SI350Website/index.php">Sorelle Ristorante Italiano  </a>
+<a class="navbar-brand" href="index.php">Sorelle Ristorante Italiano  </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -43,19 +44,20 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="/~m282364/SI350/SI350Website/index.php">Home</a>
+<a class="nav-link active" aria-current="page" href="index.php">Home</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="/~m282364/SI350/SI350Website/menu.php">Menu</a>
+<a class="nav-link" href="menu.php">Menu</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="/~m282364/SI350/SI350Website/reserve.php">Make a Reservation</a>
+<a class="nav-link" href="reserve.php">Make a Reservation</a>
 </li>
 
 
 <li class="nav-item">
-<a class="nav-link" href="/~m282364/SI350/SI350Website/logout.php">Log Out</a>
+<a class="nav-link" href="logout.php">Log Out</a>
 </li>
+<?php if (is_admin()): ?><li class="nav-item"><a class="nav-link" href="admin.php">Admin</a></li><?php endif; ?>
 
 </ul>
 </div>
@@ -69,7 +71,7 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 
 <div class="container-fluid">
 <img src="images/LOGO.png", width = 200px, height = 200px, padding=20px>
-<a class="navbar-brand" href="http://midn.cs.usna.edu/~m282364/SI350/SI350Website/index.php">Sorelle Ristorante Italiano  </a>
+<a class="navbar-brand" href="index.php">Sorelle Ristorante Italiano  </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -78,14 +80,14 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="/~m282364/SI350/SI350Website/index.php">Home</a>
+<a class="nav-link active" aria-current="page" href="index.php">Home</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="/~m282364/SI350/SI350Website/menu.php">Menu</a>
+<a class="nav-link" href="menu.php">Menu</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="/~m282364/SI350/SI350Website/login.html">Log In</a>
+<a class="nav-link" href="loginpage.php">Log In</a>
 </li>
 </ul>
 </div>

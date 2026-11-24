@@ -23,7 +23,7 @@ if (empty($mistakes)) {
         header("Location: index.php");
         exit;
     } else {
-        header("Location: login.html");
+        header("Location: loginpage.php");
         exit;
     }
 } else {
@@ -40,6 +40,6 @@ if (empty($mistakes)) {
 <!DOCTYPE html>
 <html lang="en">
 <body>
-  <a href="/~m282364/SI350/SI350Website/index.php">Go back to homepage</a>
+  <a href="index.php">Go back to homepage</a>
 </body>
 </html>

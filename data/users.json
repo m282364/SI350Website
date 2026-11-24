@@ -13,5 +13,13 @@
         "email": "test2@gmail.com",
         "password": "$2y$10$pcgqzbo.IPUnUoM54VT2leRKnGflYs67YGs98ePAGV4TRTTf2zMKi",
         "points": 0
+    },
+    "admin": {
+        "email": "admin@sorelle.com",
+        "password": "$2y$10$3SSlvm8n.BKROaXDKuka2uwrb4S.bmreAeuuilwvAj4x0kll6Z0TS",
+        "points": 0,
+        "role": "admin",
+        "disabled": false
     }
 }
+    
